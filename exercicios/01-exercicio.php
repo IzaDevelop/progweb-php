@@ -8,10 +8,11 @@
 </head>
 <body>
 <?php
-    $data = "26/04/2022";
+    // $data = "26/04/2022"; (data fixa)
+    $data = date("d/m/Y"); /* função dinâmica */
     const NOME = "Fulano";
     $idade = 20;
-    const CIDADE = "São Paulo"
+    const CIDADE = "São Paulo";
 ?>
     <p>Hoje é <?=$data?>. <?=NOME?> tem <?=$idade?> anos e nasceu em <?=CIDADE?>.</p>
 </body>
