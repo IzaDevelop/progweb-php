@@ -8,11 +8,11 @@
 </head>
 <body>
 <?php
-    const DATA = "26/04/2022";
+    $data = "26/04/2022";
     const NOME = "Fulano";
-    const IDADE = 20;
+    $idade = 20;
     const CIDADE = "São Paulo"
 ?>
-    <p>Hoje é <?=DATA?>. <?=NOME?> tem <?=IDADE?> anos e nasceu em <?=CIDADE?>.</p>
+    <p>Hoje é <?=$data?>. <?=NOME?> tem <?=$idade?> anos e nasceu em <?=CIDADE?>.</p>
 </body>
 </html>
