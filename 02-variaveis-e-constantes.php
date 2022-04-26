@@ -40,14 +40,5 @@
 ?>
     <p><?=MEU_NOME?></p>
     <p><?=ESCOLA?></p>
-
-<!-- Exercício -->
-<?php
-    const DATA = "26/04/2022";
-    const NOME = "Fulano";
-    const IDADE = 20;
-    const CIDADE = "São Paulo"
-?>
-    <p>Hoje é <?=DATA?>. <?=NOME?> tem <?=IDADE?> anos e nasceu em <?=CIDADE?></p>
 </body>
 </html>
