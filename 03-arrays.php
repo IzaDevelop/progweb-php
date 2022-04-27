@@ -17,7 +17,7 @@
     // sintaxe usando função array()
     $cursos = array("HTML5", "React", "Node.js", "PHP");
 ?>
-    <h3>Acessando os dados</h3>
+    <h3>Acessando os dados</h3 >
     <ul>
         <li><?=$alunos[2]?></li>
         <li><?=$cursos[1]?></li>
@@ -36,5 +36,14 @@
     <p>
         O curso de <?=$curso["nome"]?> tem <?=$curso["carga_horaria"]?> horas.
     </p>
+    <hr>
+    <h2>Funções de debug/depuração</h2>
+    <pre> <!-- tag HTML para identar o array -->
+        <?=print_r($cursos)?>
+    </pre>
+
+    <pre>
+        <?=var_dump($cursos)?>
+    </pre>
 </body>
 </html>

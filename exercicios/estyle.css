@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    background-color: gainsboro;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article, section {
+    padding: 5px;
+}
+
+article:hover {
+    background-color: rgb(226, 179, 179);
+}
+
+section:hover {
+    background-color: rgb(168, 214, 228);
+}
