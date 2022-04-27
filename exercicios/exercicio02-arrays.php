@@ -24,7 +24,6 @@
     ];
 ?>
     <h2>Informações</h2>
-    <hr>
     <article>
         Ela se chama <?=$ela["nome"]?> tem <?=$ela["idade"]?>, seu E-mail é <?=$ela["contato"]?>
     </article>
