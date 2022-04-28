@@ -9,9 +9,7 @@
 <body>
     <h1>Exercício de Condicionais</h1>
 <?php
-number_format($salarioNovo);
-
-    $salario = 500;
+    $salario = 1500;
 
     if ($salario < 500) {
         $salarioNovo = $salario * 1.15;
@@ -21,7 +19,15 @@ number_format($salarioNovo);
         $salarioNovo = $salario * 1.05;
     }
 ?>
-    <p>Seu salario era de R$<?=$salario?> reais e seu novo salario com reajuste é R$<?=$salarioNovo?> reais</p>
+<!-- 
+    number_format(
+        valor, 
+        quantidade de casas decimais, 
+        "separador de casa decimal",
+        "separador de milhar"
+    )
+ -->
+    <p>Seu salario era de R$<?=number_format($salario, 2, ",", ".")?> reais e seu novo salario com reajuste é R$<?=number_format($salarioNovo, 2, ",", ".") ?> reais</p>
 
 </body>
 </html>
