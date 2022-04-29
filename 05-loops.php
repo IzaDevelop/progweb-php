@@ -49,12 +49,13 @@ for($k = 1; $k <= 3; $k++) {
     <p>usando um loop, faça o array aparecer em uma lista ordenada</p>
 <?php
 $meses = array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+array_keys($meses);
 ?>
     <ol>
 <?php
-for ($i = 0; $i <= 12; $i++) {
+for ($i = 0; $i < 12; $i++) {
 ?>
-    <li><?=$i?></li>
+    <li><?=$meses[$i]?></li>
 <?php
 }
 ?>
