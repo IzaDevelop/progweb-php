@@ -10,6 +10,12 @@
     <h1>Processamento de dados</h1>
     <hr>
 <?php
+    if(empty($_POST['nome']) || empty($_POST['email']) ){
+?>
+    <p style="font-size: 2rem;">Por favor, preencha os campos Nome e E-mail do formulário!</p>
+    <p style="font-size: 1.5rem;"><a href="08-formulario.html">Voltar</a></p>
+<?php
+    } else {
     /* echo "<pre>";
     var_dump($_POST);
     echo "</pre>"; */
@@ -53,5 +59,8 @@
         <li><b>Informativos:</b> <?=$informativos?></li>
         <li><b>Mensagem:</b> <?=$mensagem?></li>
     </ul>
+<?php
+    }
+?>
 </body>
 </html>
